@@ -1,0 +1,16 @@
+package me.yling.herokutest0822;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class Herokutest0822ApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Fizz Buzz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../static/starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+</head>
+
+<body>
+<div id="preloader"></div>
+<!--==========================
+ Menu Bar
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <a href="#hero"><img src="../../../../../../Desktop/Bootstrap%20Templates/Imperial/img/logo.png" alt="" title="" /></img></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Header 1</a></h1>-->
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="/">Home</a></li>
+                <li><a href="/showPlayers">List Players</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+<!--==========================
+
+<!--==========================
+  Hero Section
+============================-->
+<section id="hero">
+    <div class="hero-container">
+        <div class="wow fadeIn">
+            <h1>Welcome to FizzBuzz</h1>
+            <a href="/" class="btn-services">Play again!</a>
+            <div class="actions">
+                <div class="col-md-6 col-md-offset-3">
+                    <div th:each="item :${fBR}">
+                        <p th:text="${item}"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Bootstrap core JavaScript
+   ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
